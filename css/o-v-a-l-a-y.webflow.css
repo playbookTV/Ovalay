@@ -1,6 +1,7 @@
 .body {
   background-image: -webkit-linear-gradient(270deg, #0e0e15, #0e0e15);
   background-image: linear-gradient(180deg, #0e0e15, #0e0e15);
+  letter-spacing: 0.4px;
 }
 
 .container {
