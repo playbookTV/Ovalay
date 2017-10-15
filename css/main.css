@@ -1,24 +1,93 @@
-body .about-ovalay {
-  display: flex;
-  letter-spacing: .4px;
-  flex-direction: column; }
-  body .about-ovalay-icon {
-    width: 420px;
-    margin-left: 26px;
-    margin-top: 50px; }
-  body .about-ovalay a {
-    margin-top: 60px;
-    border: .5px solid yellow;
-    padding: 15px 30px;
-    width: 220px; }
-  body .about-ovalay svg {
-    margin-left: 26px;
-    margin-top: 50px; }
-body .submission {
-  margin-top: 30px; }
-  body .submission-icon {
-    width: 300px;
-    height: 300px;
-    margin-left: 90px; }
+body {
+  font-family: 'Open Sans'; }
+  body .about-ovalay {
+    display: flex;
+    letter-spacing: .4px;
+    flex-direction: column; }
+    body .about-ovalay-icon {
+      width: 420px;
+      margin-left: 26px;
+      margin-top: 50px; }
+    body .about-ovalay a {
+      margin-top: 60px;
+      border: 0.5px solid #DEAB24;
+      padding: 15px 30px;
+      width: 220px; }
+    body .about-ovalay svg {
+      margin-left: 26px;
+      margin-top: 50px; }
+  body .categories ul {
+    padding-left: 30px; }
+    body .categories ul li {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 23px;
+      color: #fff;
+      list-style: none;
+      border-left: 1px solid #DEAB24;
+      padding-left: 20px; }
+  body .nomination {
+    font-family: 'Open Sans'; }
+    body .nomination .nomination-container .pri-background {
+      background-color: #DEAB24;
+      width: 500px;
+      height: 488px;
+      position: absolute;
+      right: -180px;
+      top: -30px;
+      z-index: -999; }
+    body .nomination .nomination-container .nomination-details {
+      background-color: white;
+      display: flex;
+      padding: 50px 100px;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.29); }
+      body .nomination .nomination-container .nomination-details .badge {
+        width: 200px; }
+      body .nomination .nomination-container .nomination-details .details {
+        width: 40%;
+        padding: 35px 20px; }
+        body .nomination .nomination-container .nomination-details .details .header {
+          font-family: 'Droid Serif', serif;
+          color: #000;
+          font-size: 21px; }
+        body .nomination .nomination-container .nomination-details .details .nominate-button {
+          margin-top: 15px;
+          width: 100%;
+          height: 40px;
+          background-color: #272727;
+          color: #fff;
+          box-shadow: 0 18px 30px 0 rgba(0, 0, 0, 0.52);
+          -webkit-transition: box-shadow 1s;
+          /* Safari 3.1 to 6.0 */
+          transition: box-shadow 1s; }
+          body .nomination .nomination-container .nomination-details .details .nominate-button:hover {
+            box-shadow: 0 18px 30px 0 rgba(0, 0, 0, 0.32); }
+  body .submission {
+    margin-top: 30px; }
+    body .submission h3 {
+      text-align: center;
+      margin: 30px; }
+    body .submission hr {
+      width: 50px;
+      margin: 0;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #DEAB24; }
+    body .submission .instructions .subheader {
+      margin-top: 0px;
+      font-family: 'Droid Serif', serif;
+      color: #fff;
+      font-weight: 400;
+      font-size: 21px; }
+    body .submission .instructions .agency-submit {
+      margin-top: 40px; }
+    body .submission .instructions .individual-submit {
+      margin-bottom: 40px; }
+    body .submission-icon {
+      width: 300px;
+      height: 300px;
+      margin-left: 90px; }
 
 /*# sourceMappingURL=main.css.map */
