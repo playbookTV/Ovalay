@@ -35,7 +35,6 @@
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  padding-top: 25px;
   padding-left: 0px;
 }
 
@@ -62,7 +61,7 @@
   margin-right: auto;
   margin-left: auto;
   background-color: transparent;
-  font-family: 'Droid Serif', serif;
+  font-family: 'ActaBold', serif;
   color: #fff;
   font-size: 56px;
   font-weight: 100;
@@ -71,7 +70,7 @@
 
 .header {
   margin-top: 0px;
-  font-family: 'Droid Serif', serif;
+  font-family: 'ActaBold', serif;
   color: #fff;
   font-weight: 400;
 }
@@ -170,7 +169,7 @@
 
 .heading_sub {
   margin-top: 40px;
-  font-family: 'Droid Serif', serif;
+  font-family: 'ActaBold', serif;
   color: #fff;
   font-weight: 400;
 }
