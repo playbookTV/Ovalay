@@ -114,10 +114,11 @@ body {
       body .submission-form form .input-fields {
         padding: 50px; }
         body .submission-form form .input-fields p {
-          color: white;
           font-size: 13px;
           font-weight: 300;
-          margin-bottom: 0px; }
+          margin-bottom: 0px;
+          color: #697080;
+          margin-bottom: 5px; }
         body .submission-form form .input-fields input, body .submission-form form .input-fields textarea, body .submission-form form .input-fields select {
           margin: 0;
           padding: 7px;
@@ -134,5 +135,68 @@ body {
         height: 80px;
         background-color: #deab24;
         border: none; }
+  body .judges h2 {
+    font-family: 'Droid Sans';
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff; }
+  body .judges .judge-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+    text-align: center; }
+    body .judges .judge-row .judge-container {
+      color: #fff;
+      font-weight: 300;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .judges .judge-row .judge-container .thumbnail {
+        background-color: #08080D;
+        width: 120px;
+        height: 120px;
+        margin: 50px;
+        transform: rotate(45deg);
+        border: 1px solid #DEAB24;
+        -webkit-transition: box-shadow .7s;
+        /* Safari 3.1 to 6.0 */
+        transition: box-shadow .7s; }
+      body .judges .judge-row .judge-container:hover .thumbnail {
+        background-color: #08080D;
+        width: 120px;
+        height: 120px;
+        margin: 50px;
+        transform: rotate(45deg);
+        border: 1px solid #DEAB24;
+        box-shadow: 20px 19px 23px 0 rgba(0, 0, 0, 0.32);
+        -webkit-transition: box-shadow .7s;
+        /* Safari 3.1 to 6.0 */
+        transition: box-shadow .7s; }
+  body .sponsors {
+    color: #fff; }
+    body .sponsors h2 {
+      font-family: 'Droid Sans';
+      font-weight: 700;
+      margin-bottom: 40px; }
+    body .sponsors p {
+      font-weight: 100;
+      line-height: 25px; }
+      body .sponsors p.description-details {
+        margin-top: 20px; }
+    body .sponsors .logos {
+      padding: 30px; }
+      body .sponsors .logos div[class^="row-"] {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+      body .sponsors .logos .sponsor-logo {
+        background-color: #08080D;
+        width: 18%;
+        height: 80px;
+        margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */

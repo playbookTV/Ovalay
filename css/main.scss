@@ -162,10 +162,11 @@ body {
         .input-fields {
           padding: 50px;
           p {
-            color: white;
             font-size: 13px;
             font-weight: 300;
             margin-bottom: 0px;
+            color: #697080;
+            margin-bottom: 5px;
           }
           input, textarea, select {
             margin: 0;
@@ -188,5 +189,88 @@ body {
         }
       }
     }
+  }
+
+  .judges {
+    h2 {
+      font-family: 'Droid Sans';
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .judge-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0px;
+      text-align: center;
+      .judge-container {
+        color: #fff;
+        font-weight: 300;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .thumbnail {
+          background-color: #08080D;
+          width: 120px;
+          height: 120px;
+          margin: 50px;
+          transform: rotate(45deg);
+          border: 1px solid $pri;
+          -webkit-transition: box-shadow .7s; /* Safari 3.1 to 6.0 */
+          transition: box-shadow .7s;
+
+        }
+        &:hover {
+          .thumbnail {
+            background-color: #08080D;
+            width: 120px;
+            height: 120px;
+            margin: 50px;
+            transform: rotate(45deg);
+            border: 1px solid $pri;
+            box-shadow: 20px 19px 23px 0 rgba(0, 0, 0, 0.32);
+            -webkit-transition: box-shadow .7s; /* Safari 3.1 to 6.0 */
+            transition: box-shadow .7s;
+          }
+        }
+      }
+    }
+  }
+
+  .sponsors {
+    color: #fff;
+    h2 {
+      font-family: 'Droid Sans';
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    p {
+      font-weight: 100;
+      line-height: 25px;
+      &.description-details {
+        margin-top: 20px;
+      }
+    }
+    .logos {
+      padding: 30px;
+      div[class^="row-"] {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .sponsor-logo {
+        background-color: #08080D;
+        width:  18%;
+        height: 80px;
+        margin: 10px;
+      }
+    }
+    .description {
+    }
+
   }
 }
