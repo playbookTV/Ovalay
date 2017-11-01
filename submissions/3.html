@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overlay</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/cs-skin-border.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="assets/images/Logo3x.svg" alt="" class="logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h1 class="title">Submissions</h1>
+                        <span class="steps">3/9</span>
+                    </div>
+
+                    <div class="form-body">
+                        <h1 class="section-title">Entry type</h1>
+                        <hr>
+                        <form action="#">
+                            <div class="form-group textarea-group">
+                                <label>Project summary</label>
+                                <textarea class="form-control textarea" rows="5" placeholder="In about 150 words  or less, provide a summary of your project"></textarea>
+                                <span class="d-flex justify-content-end">150 words remaining</span>
+                            </div>
+                        </form>
+
+                        <div class="btn-container">
+                            <a class="back" href="2.html">Back</a>
+                            <a class="btn--next d-flex justify-content-center align-items-center" href="4.html">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/selectFx.js"></script>
+
+<script>
+    (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+            (function() {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+            // in case the input is already filled..
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl, 'float--label' );
+            }
+
+            // events:
+            inputEl.addEventListener( 'keypress', onInputKeyPress );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputKeyPress( ev ) {
+            classie.add( ev.target, 'float--label' );
+        }
+
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                classie.remove( ev.target, 'float--label' );
+            }
+        }
+    })();
+</script>
+</body>
+</html>
