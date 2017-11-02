@@ -1,5 +1,11 @@
 @import "mixins";
 $pri: #DEAB24;
+body {
+  font-spacing: 0.14px;
+  ul {
+    font-family: 'Open Sans';
+  }
+}
 // $black: #08080D;
 // $darkergrey: #272727;
 //
@@ -470,7 +476,7 @@ $pri: #DEAB24;
 .submission {
   .w-button {
     @include breakpoint($min: 320px, $max: 640px) {
-      width: 330px;
+      width: 80vw;
     }
   }
 }
@@ -478,16 +484,18 @@ $pri: #DEAB24;
 
 .judges {
   h2 {
-    font-family: 'Droid Sans';
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #fff;
+    font-family: 'Droid Serif', serif;
+    color: $pri;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .judge-row {
     @include breakpoint($min: 320px, $max: 640px) {
       flex-wrap: wrap;
     }
+    font-family: 'Open Sans';
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -533,14 +541,17 @@ $pri: #DEAB24;
 
 .sponsors {
   color: #fff;
+  font-family: 'Open Sans';
   @include breakpoint($min: 320px, $max: 640px) {
     display: flex;
     flex-wrap: wrap-reverse;
   }
   h2 {
-    font-family: 'Droid Sans';
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-family: 'Droid Serif', serif;
+    color: $pri;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
   }
   p {
     font-weight: 100;

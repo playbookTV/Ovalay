@@ -1,13 +1,20 @@
+body {
+  font-spacing: 0.14px; }
+  body ul {
+    font-family: 'Open Sans'; }
+
 @media (min-width: 320px) and (max-width: 640px) {
   .submission .w-button {
-    width: 330px; } }
+    width: 80vw; } }
 
 .judges h2 {
-  font-family: 'Droid Sans';
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #fff; }
+  font-family: 'Droid Serif', serif;
+  color: #DEAB24;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center; }
 .judges .judge-row {
+  font-family: 'Open Sans';
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -50,15 +57,18 @@
       transition: box-shadow .7s; }
 
 .sponsors {
-  color: #fff; }
+  color: #fff;
+  font-family: 'Open Sans'; }
   @media (min-width: 320px) and (max-width: 640px) {
     .sponsors {
       display: flex;
       flex-wrap: wrap-reverse; } }
   .sponsors h2 {
-    font-family: 'Droid Sans';
-    font-weight: 700;
-    margin-bottom: 40px; }
+    font-family: 'Droid Serif', serif;
+    color: #DEAB24;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center; }
   .sponsors p {
     font-weight: 100;
     line-height: 25px; }
