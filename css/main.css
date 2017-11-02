@@ -1,0 +1,92 @@
+@media (min-width: 320px) and (max-width: 640px) {
+  .submission .w-button {
+    width: 330px; } }
+
+.judges h2 {
+  font-family: 'Droid Sans';
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff; }
+.judges .judge-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0px;
+  text-align: center; }
+  @media (min-width: 320px) and (max-width: 640px) {
+    .judges .judge-row {
+      flex-wrap: wrap; } }
+  .judges .judge-row .judge-container {
+    color: #fff;
+    font-weight: 300;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 320px) and (max-width: 640px) {
+      .judges .judge-row .judge-container {
+        width: 50%; } }
+    .judges .judge-row .judge-container .thumbnail {
+      background-color: #08080D;
+      width: 120px;
+      height: 120px;
+      margin: 50px;
+      transform: rotate(45deg);
+      border: 1px solid #DEAB24;
+      -webkit-transition: box-shadow .7s;
+      /* Safari 3.1 to 6.0 */
+      transition: box-shadow .7s; }
+    .judges .judge-row .judge-container:hover .thumbnail {
+      background-color: #08080D;
+      width: 120px;
+      height: 120px;
+      margin: 50px;
+      transform: rotate(45deg);
+      border: 1px solid #DEAB24;
+      box-shadow: 20px 19px 23px 0 rgba(0, 0, 0, 0.32);
+      -webkit-transition: box-shadow .7s;
+      /* Safari 3.1 to 6.0 */
+      transition: box-shadow .7s; }
+
+.sponsors {
+  color: #fff; }
+  @media (min-width: 320px) and (max-width: 640px) {
+    .sponsors {
+      display: flex;
+      flex-wrap: wrap-reverse; } }
+  .sponsors h2 {
+    font-family: 'Droid Sans';
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .sponsors p {
+    font-weight: 100;
+    line-height: 25px; }
+    .sponsors p.description-details {
+      margin-top: 20px; }
+  .sponsors .logos {
+    padding: 30px; }
+    .sponsors .logos div[class^="row-"] {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      @media (min-width: 320px) and (max-width: 640px) {
+        .sponsors .logos div[class^="row-"] {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center; } }
+    .sponsors .logos .sponsor-logo {
+      background-color: #08080D;
+      width: 18%;
+      height: 80px;
+      margin: 10px; }
+      @media (min-width: 320px) and (max-width: 640px) {
+        .sponsors .logos .sponsor-logo {
+          width: 40%;
+          flex-wrap: wrap;
+          height: 130px; } }
+
+/*# sourceMappingURL=main.css.map */
