@@ -1,3 +1,129 @@
 @import "mixins";
 @import "variables";
 @import "styles";
+=======
+$pri: #DEAB24;
+body {
+  font-spacing: 0.14px;
+  ul {
+    font-family: 'Open Sans';
+  }
+}
+
+
+.submission {
+  .w-button {
+    @include breakpoint($min: 320px, $max: 640px) {
+      width: 80vw;
+    }
+  }
+}
+
+
+.judges {
+  h2 {
+    font-family: 'Droid Serif', serif;
+    color: $pri;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .judge-row {
+    @include breakpoint($min: 320px, $max: 640px) {
+      flex-wrap: wrap;
+    }
+    font-family: 'Open Sans';
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+    text-align: center;
+    .judge-container {
+      color: #fff;
+      font-weight: 300;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint($min: 320px, $max: 640px) {
+        width: 50%;
+      }
+      .thumbnail {
+        background-color: #08080D;
+        width: 120px;
+        height: 120px;
+        margin: 50px;
+        transform: rotate(45deg);
+        border: 1px solid $pri;
+        -webkit-transition: box-shadow .7s; /* Safari 3.1 to 6.0 */
+        transition: box-shadow .7s;
+      }
+      &:hover {
+        .thumbnail {
+          background-color: #08080D;
+          width: 120px;
+          height: 120px;
+          margin: 50px;
+          transform: rotate(45deg);
+          border: 1px solid $pri;
+          box-shadow: 20px 19px 23px 0 rgba(0, 0, 0, 0.32);
+          -webkit-transition: box-shadow .7s; /* Safari 3.1 to 6.0 */
+          transition: box-shadow .7s;
+        }
+      }
+    }
+  }
+}
+
+.sponsors {
+  color: #fff;
+  font-family: 'Open Sans';
+  @include breakpoint($min: 320px, $max: 640px) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  h2 {
+    font-family: 'Droid Serif', serif;
+    color: $pri;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  p {
+    font-weight: 100;
+    line-height: 25px;
+    &.description-details {
+      margin-top: 20px;
+    }
+  }
+
+  .logos {
+    padding: 30px;
+    div[class^="row-"] {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include breakpoint($min: 320px, $max: 640px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+    .sponsor-logo {
+      background-color: #08080D;
+      width:  18%;
+      height: 80px;
+      margin: 10px;
+      @include breakpoint($min: 320px, $max: 640px) {
+        width: 40%;
+        flex-wrap: wrap;
+        height: 130px;
+      }
+    }
+  }
+}
