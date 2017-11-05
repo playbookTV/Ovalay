@@ -1,10 +1,11 @@
 .body {
   background-image: url('../images/background_art_s.png'), -webkit-linear-gradient(270deg, #0e0e15, #0e0e15);
   background-image: url('../images/background_art_s.png'), linear-gradient(180deg, #0e0e15, #0e0e15);
-  background-position: 50% -110%, 0px 0px;
+  background-position: 50% -130%, 0px 0px;
   background-size: auto, auto;
   background-repeat: no-repeat, repeat;
   background-attachment: scroll, scroll;
+    padding: 0 20px;
 }
 
 .container {
@@ -47,6 +48,7 @@
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+     max-width: 960px;
 }
 
 .image-2 {
@@ -370,6 +372,7 @@
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
+      max-width: 960px;
   }
   .heading {
     -webkit-perspective: 0px;
