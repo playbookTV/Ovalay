@@ -1,7 +1,7 @@
 @import "mixins";
 @import "variables";
 @import "styles";
-=======
+// =======
 $pri: #DEAB24;
 body {
   font-spacing: 0.14px;
@@ -59,7 +59,154 @@ body {
         border: 1px solid $pri;
         -webkit-transition: box-shadow .7s; /* Safari 3.1 to 6.0 */
         transition: box-shadow .7s;
+        position: relative;
+        overflow: hidden;
+        &.victor:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -20%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/victor.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-50deg);
+        }
+        &.chris:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -20%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/chris.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-50deg);
+        }
+        &.chuks:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -20%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/chuks.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-50deg);
+        }
+        &.editi:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -20%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/editi.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-50deg);
+        }
+        &.evans:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/evans.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.mathias:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/matthias.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.charles:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/charles.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.steve:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/steve.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.kanso:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/kanso.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.amusat:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/usman.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+        &.bayo:before {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -23%;
+          left: -20%;
+          z-index: -1;
+          background: url(../images/bayo.jpg) 0 0 repeat;
+          -webkit-transform: rotate(30deg);
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
       }
+
+
       &:hover {
         .thumbnail {
           background-color: #08080D;
