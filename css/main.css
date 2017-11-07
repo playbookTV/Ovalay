@@ -9,7 +9,7 @@ body {
   background-color: #DEAB24;
   color: #0e0e15;
   cursor: pointer;
-  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 50px;
   text-align: center;
@@ -27,7 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 @media (min-width: 320px) and (max-width: 640px) {
   .submission .w-button {
-    width: 100%; } }
+    width: 100% !important; } }
 
 .judges h2 {
   font-family: "Droid Sans", serif;
@@ -55,7 +55,7 @@ body {
     align-items: center; }
     @media (min-width: 320px) and (max-width: 640px) {
       .judges .judge-row .judge-container {
-        width: 100%; } }
+        width: 100% !important; } }
     .judges .judge-row .judge-container .thumbnail {
       background-color: #08080D;
       width: 120px;
@@ -101,7 +101,7 @@ body {
     padding: 30px; }
     @media (min-width: 320px) and (max-width: 640px) {
       .sponsors .logos {
-        padding: 0px; } }
+        padding: 0px !important; } }
     .sponsors .logos div[class^="row-"] {
       width: 100%;
       display: flex;
@@ -121,9 +121,9 @@ body {
       margin: 10px; }
       @media (min-width: 320px) and (max-width: 640px) {
         .sponsors .logos .sponsor-logo {
-          width: 40%;
-          flex-wrap: wrap;
-          height: 130px; } }
+          width: 39% !important;
+          flex-wrap: wrap !important;
+          height: 100px !important; } }
 
 body {
   font-spacing: 0.14px; }
