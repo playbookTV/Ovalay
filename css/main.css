@@ -9,7 +9,7 @@ body {
   background-color: #DEAB24;
   color: #0e0e15;
   cursor: pointer;
-  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 50px;
   text-align: center;
@@ -27,7 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 @media (min-width: 320px) and (max-width: 640px) {
   .submission .w-button {
-    width: 100%; } }
+    width: 100% !important; } }
 
 .judges h2 {
   font-family: "Droid Sans", serif;
@@ -55,112 +55,7 @@ body {
     align-items: center; }
     @media (min-width: 320px) and (max-width: 640px) {
       .judges .judge-row .judge-container {
-        width: 100%; } }
-    .judges .judge-row .judge-container .thumbnail {
-      background-color: #08080D;
-      width: 120px;
-      height: 120px;
-      margin: 50px;
-      transform: rotate(45deg);
-      border: 1px solid #DEAB24;
-      -webkit-transition: box-shadow .7s;
-      /* Safari 3.1 to 6.0 */
-      transition: box-shadow .7s;
-      cursor: pointer; }
-    .judges .judge-row .judge-container:hover .thumbnail {
-      background-color: #08080D;
-      width: 120px;
-      height: 120px;
-      margin: 50px;
-      transform: rotate(45deg);
-      border: 1px solid #DEAB24;
-      box-shadow: 20px 19px 23px 0 rgba(0, 0, 0, 0.32);
-      -webkit-transition: box-shadow .7s;
-      /* Safari 3.1 to 6.0 */
-      transition: box-shadow .7s; }
-
-.sponsors {
-  color: #fff;
-  font-family: "Open Sans"; }
-  @media (min-width: 320px) and (max-width: 640px) {
-    .sponsors {
-      display: flex;
-      flex-wrap: wrap-reverse; } }
-  .sponsors h2 {
-    font-family: "Droid Sans", serif;
-    color: #DEAB24;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center; }
-  .sponsors p {
-    font-weight: 100;
-    line-height: 25px; }
-    .sponsors p.description-details {
-      margin-top: 20px; }
-  .sponsors .logos {
-    padding: 30px; }
-    @media (min-width: 320px) and (max-width: 640px) {
-      .sponsors .logos {
-        padding: 0px; } }
-    .sponsors .logos div[class^="row-"] {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      @media (min-width: 320px) and (max-width: 640px) {
-        .sponsors .logos div[class^="row-"] {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          align-items: center; } }
-    .sponsors .logos .sponsor-logo {
-      background-color: #08080D;
-      width: 18%;
-      height: 80px;
-      margin: 10px; }
-      @media (min-width: 320px) and (max-width: 640px) {
-        .sponsors .logos .sponsor-logo {
-          width: 40%;
-          flex-wrap: wrap;
-          height: 130px; } }
-
-body {
-  font-spacing: 0.14px; }
-  body ul {
-    font-family: 'Open Sans'; }
-
-@media (min-width: 320px) and (max-width: 640px) {
-  .submission .w-button {
-    width: 80vw; } }
-
-.judges h2 {
-  font-family: 'Droid Serif', serif;
-  color: #DEAB24;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center; }
-.judges .judge-row {
-  font-family: 'Open Sans';
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0px;
-  text-align: center; }
-  @media (min-width: 320px) and (max-width: 640px) {
-    .judges .judge-row {
-      flex-wrap: wrap; } }
-  .judges .judge-row .judge-container {
-    color: #fff;
-    font-weight: 300;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    @media (min-width: 320px) and (max-width: 640px) {
-      .judges .judge-row .judge-container {
-        width: 50%; } }
+        width: 100% !important; } }
     .judges .judge-row .judge-container .thumbnail {
       background-color: #08080D;
       width: 120px;
@@ -190,7 +85,7 @@ body {
         position: absolute;
         width: 150%;
         height: 150%;
-        top: -20%;
+        top: -24%;
         left: -20%;
         z-index: -1;
         background: url(../images/chris.jpg) 0 0 repeat;
@@ -202,7 +97,7 @@ body {
         position: absolute;
         width: 150%;
         height: 150%;
-        top: -20%;
+        top: -24%;
         left: -20%;
         z-index: -1;
         background: url(../images/chuks.jpg) 0 0 repeat;
@@ -214,7 +109,7 @@ body {
         position: absolute;
         width: 150%;
         height: 150%;
-        top: -20%;
+        top: -24%;
         left: -20%;
         z-index: -1;
         background: url(../images/editi.jpg) 0 0 repeat;
@@ -226,7 +121,7 @@ body {
         position: absolute;
         width: 150%;
         height: 150%;
-        top: -23%;
+        top: -24%;
         left: -20%;
         z-index: -1;
         background: url(../images/evans.jpg) 0 0 repeat;
@@ -319,13 +214,13 @@ body {
 
 .sponsors {
   color: #fff;
-  font-family: 'Open Sans'; }
+  font-family: "Open Sans"; }
   @media (min-width: 320px) and (max-width: 640px) {
     .sponsors {
       display: flex;
       flex-wrap: wrap-reverse; } }
   .sponsors h2 {
-    font-family: 'Droid Serif', serif;
+    font-family: "Droid Sans", serif;
     color: #DEAB24;
     font-size: 24px;
     font-weight: 400;
@@ -337,6 +232,9 @@ body {
       margin-top: 20px; }
   .sponsors .logos {
     padding: 30px; }
+    @media (min-width: 320px) and (max-width: 640px) {
+      .sponsors .logos {
+        padding: 0px !important; } }
     .sponsors .logos div[class^="row-"] {
       width: 100%;
       display: flex;
@@ -350,14 +248,57 @@ body {
           justify-content: space-around;
           align-items: center; } }
     .sponsors .logos .sponsor-logo {
-      background-color: #08080D;
+      background-color: #fff;
       width: 18%;
       height: 80px;
-      margin: 10px; }
+      margin: 10px;
+      position: relative;
+      overflow: hidden; }
       @media (min-width: 320px) and (max-width: 640px) {
         .sponsors .logos .sponsor-logo {
-          width: 40%;
-          flex-wrap: wrap;
-          height: 130px; } }
+          width: 39% !important;
+          flex-wrap: wrap !important;
+          height: 100px !important; } }
+      .sponsors .logos .sponsor-logo.devcenter:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%;
+        z-index: 1;
+        background: url(../images/devcenter.png) 0 0 repeat;
+        background-size: cover; }
+      .sponsors .logos .sponsor-logo.visual:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 28%;
+        top: 35%;
+        left: 0%;
+        z-index: 1;
+        background: url(../images/visual.png) 0 0 repeat;
+        background-size: cover; }
+      .sponsors .logos .sponsor-logo.farabale:before {
+        content: "";
+        position: absolute;
+        width: 125%;
+        height: 27%;
+        transform: rotate(-45deg);
+        top: 28px;
+        left: -10%;
+        z-index: 1;
+        background: url(../images/farabale.png) 0 0 repeat;
+        background-size: cover; }
+      .sponsors .logos .sponsor-logo.design-nigeria:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%;
+        z-index: 1;
+        background: url(../images/design-nigeria.png) 0 0 repeat;
+        background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
