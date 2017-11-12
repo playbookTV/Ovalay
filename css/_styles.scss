@@ -36,23 +36,6 @@ body {
     }
 }
 
-.box{
-    .box_about{
-        padding-right: 120px;
-
-        @media (max-width: 479px){
-            padding-right: 20px;
-        }
-    }
-    .box_categories{
-        padding-left: 120px;
-
-        @media (max-width: 479px){
-            padding-left: 20px;
-        }
-    }
-}
-
 .judges {
     h2 {
         font-family: $font-family-2, serif;

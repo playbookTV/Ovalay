@@ -1,28 +1,11 @@
 .body {
-  background-image: url('../images/background_art_s.png'), -webkit-linear-gradient(270deg, #0e0e15, #0e0e15);
-  background-image: url('../images/background_art_s.png'), linear-gradient(180deg, #0e0e15, #0e0e15);
-  background-position: 50% -90%, 0px 0px;
+  /* background-image: url('../images/background_art_s.png'), -webkit-linear-gradient(270deg, #0e0e15, #0e0e15);
+  background-image: url('../images/background_art_s.png'), linear-gradient(180deg, #0e0e15, #0e0e15); */
+  /* background-position: 50% -90%, 0px 0px;
   background-size: auto, auto;
-  background-repeat: no-repeat, repeat;
-  background-attachment: scroll, scroll;
-    padding: 0 20px;
-}
-@media (min-width: 1441px) and (max-width: 2559px) {
-  .body {
-    background-position: 50% -77%, 0px 0px;;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .body {
-    background-position: 50% -67%, 0px 0px;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1023px) {
-  .body {
-    background-position: 50% -65%, 0px 0px;
-  }
+  background-repeat: no-repeat, repeat; */
+  /* background-attachment: scroll, scroll; */
+  /* padding: 0 20px; */
 }
 
 .container {
@@ -31,7 +14,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+  margin: 0;
   padding: 10px 18px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -48,6 +31,16 @@
   transform-origin: 50% 100%;
   -webkit-transition: opacity 275ms ease;
   transition: opacity 275ms ease;
+
+  background-image: url('../images/background_art_s.png'), linear-gradient(180deg, #0e0e15, #0e0e15);
+  background-repeat: no-repeat;
+  background-position: 50% 20%, 0px 0px;
+}
+
+@media (max-width: 768px){
+  .container {
+    background-image: linear-gradient(180deg, #0e0e15, #0e0e15);
+  }
 }
 
 .image {
@@ -126,6 +119,12 @@
   margin-top: 419px;
   margin-bottom: 120px;
   padding-bottom: 0px;
+}
+
+@media (max-width: 768px){
+  .row.box.submission {
+    margin-top: 100px;
+  }
 }
 
 .utility-page-wrap {
@@ -288,17 +287,9 @@
 }
 
 @media (max-width: 991px) {
-  .body {
-    background-image: url('../images/background_art_s.png'), -webkit-linear-gradient(270deg, #0e0e15, #0e0e15);
-    background-image: url('../images/background_art_s.png'), linear-gradient(180deg, #0e0e15, #0e0e15);
-    /*background-position: 50% -101%, 0px 0px;*/
-    background-size: auto, auto;
-  }
   .container {
     display: block;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
+    margin: 0;
   }
   .image-2 {
     top: -63px;
